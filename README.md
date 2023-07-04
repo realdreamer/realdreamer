@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Mohamed Ismail</h1>
-<h3 align="center">A passionate frontend developer from India. Currently working at Amsterdam for Momentive.ai(formerly SurveyMonkey)</h3>
+<h3 align="center">A passionate frontend developer from India. Currently working at Amsterdam for Kadena.io</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=realdreamer&label=Profile%20views&color=0e75b6&style=flat" alt="realdreamer" /> </p>
 
