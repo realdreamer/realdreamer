@@ -3,8 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=realdreamer&label=Profile%20views&color=0e75b6&style=flat" alt="realdreamer" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=realdreamer" alt="realdreamer" /></a> </p>
-
 - 🔭 I’m currently working on **NextJS, VSCode extensions, Web3 and Blockchain**
 - 🌱 I’m currently learning **Web3, home automation and epicweb.dev**
 - 👯 I’m looking to collaborate on any **React/React Native and GraphQL** based side hustles
