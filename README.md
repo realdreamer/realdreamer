@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm Mohamed Ismail</h1>
 <h3 align="center">A passionate frontend developer from India. Currently working at Amsterdam for Kadena.io</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=realdreamer&label=Profile%20views&color=0e75b6&style=flat" alt="realdreamer" /> </p>
 
 - 🔭 I’m currently working on **NextJS, VSCode extensions, Web3 and Blockchain**
 - 🌱 I’m currently learning **Web3, home automation and epicweb.dev**
@@ -17,7 +16,8 @@
 <a href="https://linkedin.com/in/linkedin.com/in/mohamed-ismail-s-a-96412316/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin.com/in/mohamed-ismail-s-a-96412316/" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/realdreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="realdreamer" height="30" width="40" /></a>
 </p>
-
+<br/>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=realdreamer&label=Profile%20views&color=0e75b6&style=flat" alt="realdreamer" /> </p>
 
 <!--
 **realdreamer/realdreamer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
