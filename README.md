@@ -2,7 +2,7 @@
 <h3 align="center">A passionate frontend developer from India. Currently working at Amsterdam for Kadena.io</h3>
 
 
-- 🔭 I’m currently working on **NextJS, VSCode extensions, Web3 and Blockchain**
+- 🔭 I’m currently working on **NextJS, React, Typescript, CLI(Node.JS), Web3 and Blockchain**
 - 🌱 I’m currently learning **Web3, home automation and epicweb.dev**
 - 👯 I’m looking to collaborate on any **React/React Native and GraphQL** based side hustles
 - 💬 Ask me anything about **React, JavaScript, TypeScript and GraphQL**
