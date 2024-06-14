@@ -13,7 +13,7 @@
 <p align="left">
 <a href="https://codepen.io/realdreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="realdreamer" height="30" width="40" /></a>
 <a href="https://dev.to/realdreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="realdreamer" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/linkedin.com/in/mohamed-ismail-s-a-96412316/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin.com/in/mohamed-ismail-s-a-96412316/" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/mohamed-ismail-s-a-96412316/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin.com/in/mohamed-ismail-s-a-96412316/" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/realdreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="realdreamer" height="30" width="40" /></a>
 </p>
 <br/>
