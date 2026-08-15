@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Mohamed Ismail</h1>
-<h3 align="center">A passionate frontend developer from India. Currently working at Amsterdam for Nationale Nederlanden</h3>
+<h3 align="center">A passionate fullstack developer from India. Currently working at Amsterdam for Nationale Nederlanden</h3>
 
 
 - 🔭 I’m currently working on **NextJS, React, Typescript, CLI(Node.JS), and AWS**
