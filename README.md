@@ -1,15 +1,29 @@
-<h1 align="center">Hi 👋, I'm Mohamed Ismail</h1>
-<h3 align="center">A passionate fullstack developer from India. Currently working at Amsterdam for Nationale Nederlanden</h3>
+<!--
+  Mohamed Ismail — GitHub profile README
+  Save this as README.md in a repo named exactly your GitHub username
+  (e.g. github.com/<username>/<username>) and GitHub renders it on your profile.
+-->
 
+### Hi 👋, I'm Mohamed Ismail
 
-- 🔭 I’m currently working on **NextJS, React, Typescript, CLI(Node.JS), and AWS**
-- 🌱 I’m currently learning **Web3, AWS, home automation and epicweb.dev**
-- 👯 I’m looking to collaborate on any **React/React Native and GraphQL** based side hustles
-- 💬 Ask me anything about **React, JavaScript, TypeScript and GraphQL**
-- 📫 How to reach me **ismailreality@icloud.com**
+A Senior Fullstack Engineer based in Uithoorn, Netherlands, currently building fullstack architecture and platform tooling at Nationale-Nederlanden.
+
+- 🔭 Currently working on fullstack architecture, React/TypeScript platform tooling, and API integrations at **Nationale-Nederlanden**
+- 🌱 Currently exploring Web3, AWS, and home automation
+- 👯 Looking to collaborate on React / React Native and GraphQL side projects
+- 🚀 Would love to take on more team lead / mentoring work — helping junior developers grow is one of my favorite parts of the job
+- 🌐 Portfolio: **[mohamedismail.dev](https://www.mohamedismail.dev/)**
+- 📫 Reach me at **ismailreality1@gmail.com**
 - 😄 Pronouns: He/Him
 
-<h3 align="left">Connect with me:</h3>
+#### Tech I work with
+
+React · TypeScript · Next.js · Node.js · GraphQL · REST APIs · AWS · CI/CD · Fullstack Architecture
+
+---
+
+### Connect with me
+
 <p align="left">
 <a href="https://codepen.io/realdreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="realdreamer" height="30" width="40" /></a>
 <a href="https://dev.to/realdreamer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="realdreamer" height="30" width="40" /></a>
