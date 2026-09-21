@@ -1,8 +1,12 @@
 name: Update recent activity
 
+# Writes your latest public GitHub activity (commits pushed, PRs, reviews,
+# issues, releases, new repos) between the START/END markers in README.md.
+# No third-party action: it reads the public events API with the built-in token.
+
 on:
   schedule:
-    - cron: "41 */6 * * *"   # every 6 hours
+    - cron: "41 */6 * * *" # every 6 hours
   workflow_dispatch:
 
 permissions:
@@ -13,12 +17,107 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Write the latest commits, PRs, reviews and issues into README.md
-        uses: jamesgeorge007/github-activity-readme@master
+      - name: Build the activity list
+        uses: actions/github-script@v8
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_LINES: "6"
         with:
-          COMMIT_MSG: "chore: refresh recent activity"
-          MAX_LINES: 6
+          script: |
+            const fs = require('fs');
+            const user = context.repo.owner;
+            const max = Number(process.env.MAX_LINES || 6);
+            const self = `${user}/${user}`;
+
+            const { data: events } = await github.request('GET /users/{user}/events/public', {
+              user, per_page: 100,
+            });
+
+            const repo = (e) => `[${e.repo.name}](https://github.com/${e.repo.name})`;
+            const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+            const fmt = (e) => {
+              const p = e.payload || {};
+              switch (e.type) {
+                case 'PushEvent': {
+                  const n = p.size ?? p.distinct_size ?? (p.commits || []).length;
+                  const branch = (p.ref || '').replace('refs/heads/', '');
+                  const what = n ? `${n} commit${n === 1 ? '' : 's'}` : 'commits';
+                  return `⬆️ Pushed ${what} to \`${branch}\` in ${repo(e)}`;
+                }
+                case 'PullRequestEvent': {
+                  const pr = p.pull_request || {};
+                  const link = `[#${pr.number}](${pr.html_url})`;
+                  if (p.action === 'closed' && pr.merged) return `🎉 Merged PR ${link} in ${repo(e)}`;
+                  if (p.action === 'opened') return `💪 Opened PR ${link} in ${repo(e)}`;
+                  if (p.action === 'closed') return `❌ Closed PR ${link} in ${repo(e)}`;
+                  return null;
+                }
+                case 'PullRequestReviewEvent': {
+                  const pr = p.pull_request || {};
+                  const state = (p.review?.state || 'reviewed').toLowerCase();
+                  const verb = state === 'approved' ? 'Approved' : state === 'changes_requested' ? 'Requested changes on' : 'Reviewed';
+                  return `👀 ${verb} PR [#${pr.number}](${pr.html_url}) in ${repo(e)}`;
+                }
+                case 'PullRequestReviewCommentEvent': {
+                  const pr = p.pull_request || {};
+                  return `💬 Left review comments on PR [#${pr.number}](${pr.html_url}) in ${repo(e)}`;
+                }
+                case 'IssuesEvent': {
+                  const i = p.issue || {};
+                  if (!['opened', 'closed', 'reopened'].includes(p.action)) return null;
+                  return `❗ ${cap(p.action)} issue [#${i.number}](${i.html_url}) in ${repo(e)}`;
+                }
+                case 'IssueCommentEvent': {
+                  const i = p.issue || {};
+                  return `🗣 Commented on [#${i.number}](${i.html_url}) in ${repo(e)}`;
+                }
+                case 'ReleaseEvent':
+                  return `🚀 Released [${p.release?.tag_name}](${p.release?.html_url}) in ${repo(e)}`;
+                case 'CreateEvent':
+                  return p.ref_type === 'repository' ? `🌱 Created ${repo(e)}` : null;
+                default:
+                  return null;
+              }
+            };
+
+            // Skip this repo's own bot commits (activity refreshes, snake builds).
+            const lines = [];
+            const seen = new Set();
+            for (const e of events) {
+              if (e.repo.name === self) continue;
+              const line = fmt(e);
+              if (!line || seen.has(line)) continue;
+              seen.add(line);
+              lines.push(`${lines.length + 1}. ${line}`);
+              if (lines.length >= max) break;
+            }
+
+            const body = lines.length
+              ? lines.join('\n')
+              : '_Quiet on public repos right now — most of my day-to-day work lives in private repositories._';
+
+            const start = '<!--START_SECTION:activity-->';
+            const end = '<!--END_SECTION:activity-->';
+            const readme = fs.readFileSync('README.md', 'utf8');
+            const a = readme.indexOf(start);
+            const b = readme.indexOf(end);
+            if (a === -1 || b === -1) {
+              core.setFailed('Activity markers not found in README.md');
+              return;
+            }
+            const next = readme.slice(0, a + start.length) + '\n' + body + '\n' + readme.slice(b);
+            fs.writeFileSync('README.md', next);
+            core.info(`Wrote ${lines.length} activity line(s).`);
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: refresh recent activity"
+          git push
