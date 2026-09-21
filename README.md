@@ -180,7 +180,11 @@ I'm happy to pair, review, or co-maintain. Especially interested in:
 ## 🏆 Trophy cabinet
 
 <p align="center">
-  <img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=realdreamer&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=6&row=1&title=Commits,PullRequest,Repositories,Stars,Followers,Issues">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/realdreamer/realdreamer/output/trophy-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/realdreamer/realdreamer/output/trophy-light.svg">
+    <img alt="GitHub trophies" src="https://raw.githubusercontent.com/realdreamer/realdreamer/output/trophy-dark.svg" width="100%">
+  </picture>
 </p>
 
 ---
