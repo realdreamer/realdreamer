@@ -207,7 +207,7 @@ I'm happy to pair, review, or co-maintain. Especially interested in:
 ## ⚡ Recently
 
 <!--START_SECTION:activity-->
-<!-- This list is written automatically by .github/workflows/activity.yml -->
+1. ⬆️ Pushed commits to `master` in [realdreamer/mojs](https://github.com/realdreamer/mojs)
 <!--END_SECTION:activity-->
 
 ---
