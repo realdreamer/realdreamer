@@ -28,13 +28,19 @@ jobs:
             dist/github-snake.svg?palette=github-light
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#4CE0B3
 
+      # The snake step runs in Docker as root, so dist/ ends up root-owned and
+      # the trophy renderer (Deno, running as the normal runner user) can't write
+      # into it. Render trophies into their own folder, then copy them over.
+      - name: Prepare trophy folder
+        run: mkdir -p trophies
+
       - name: Generate trophies (dark)
         uses: ryo-ma/github-profile-trophy@master
         with:
           username: ${{ github.repository_owner }}
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: darkhub
-          output_path: dist/trophy-dark.svg
+          output_path: trophies/trophy-dark.svg
 
       - name: Generate trophies (light)
         uses: ryo-ma/github-profile-trophy@master
@@ -42,7 +48,14 @@ jobs:
           username: ${{ github.repository_owner }}
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: flat
-          output_path: dist/trophy-light.svg
+          output_path: trophies/trophy-light.svg
+
+      - name: Collect trophies into dist/
+        run: |
+          sudo mkdir -p dist
+          sudo cp trophies/*.svg dist/
+          sudo chown -R "$(id -u):$(id -g)" dist
+          ls -la dist
 
       - name: Push to the "output" branch
         uses: crazy-max/ghaction-github-pages@v5
