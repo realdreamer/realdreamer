@@ -212,7 +212,8 @@ I'm happy to pair, review, or co-maintain. Especially interested in:
 
 <!--START_SECTION:activity-->
 1. ⬆️ Pushed commits to `main` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
-2. ⬆️ Pushed commits to `master` in [realdreamer/mojs](https://github.com/realdreamer/mojs)
+2. 💪 Opened PR [#2](undefined) in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
+3. ⬆️ Pushed commits to `master` in [realdreamer/mojs](https://github.com/realdreamer/mojs)
 <!--END_SECTION:activity-->
 
 ---
