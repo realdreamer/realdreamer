@@ -211,12 +211,12 @@ I'm happy to pair, review, or co-maintain. Especially interested in:
 ## ⚡ Recently
 
 <!--START_SECTION:activity-->
-1. ⬆️ Pushed commits to `main` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
-2. 💪 Opened PR [#4](undefined) in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
-3. 👀 Approved PR [#3](undefined) in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
-4. ❌ Closed PR [#3](undefined) in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
-5. 💪 Opened PR [#2](undefined) in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
-6. ⬆️ Pushed commits to `master` in [realdreamer/mojs](https://github.com/realdreamer/mojs)
+1. 💪 Opened PR [#12](undefined) in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
+2. ⬆️ Pushed commits to `main` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
+3. ⬆️ Pushed commits to `docs/party-night-example` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
+4. 💪 Opened PR [#11](undefined) in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
+5. 💪 Opened PR [#10](undefined) in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
+6. ⬆️ Pushed commits to `docs/phase-2-docs-site` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
 <!--END_SECTION:activity-->
 
 ---
