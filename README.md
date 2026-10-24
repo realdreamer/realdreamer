@@ -211,12 +211,12 @@ I'm happy to pair, review, or co-maintain. Especially interested in:
 ## ⚡ Recently
 
 <!--START_SECTION:activity-->
-1. ⬆️ Pushed commits to `main` in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
-2. 💪 Opened PR [#2](undefined) in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
-3. ⬆️ Pushed commits to `main` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
-4. 💪 Opened PR [#1](undefined) in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
-5. ⬆️ Pushed commits to `docs/phase-2-docs-site` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
-6. ⬆️ Pushed commits to `launch/codepens` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
+1. 💪 Opened PR [#3](undefined) in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
+2. ⬆️ Pushed commits to `main` in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
+3. 💪 Opened PR [#2](undefined) in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
+4. ⬆️ Pushed commits to `main` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
+5. 💪 Opened PR [#1](undefined) in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
+6. ⬆️ Pushed commits to `docs/phase-2-docs-site` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
 <!--END_SECTION:activity-->
 
 ---
