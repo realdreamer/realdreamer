@@ -216,7 +216,6 @@ I'm happy to pair, review, or co-maintain. Especially interested in:
 3. 💪 Opened PR [#2](undefined) in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
 4. ⬆️ Pushed commits to `main` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
 5. 💪 Opened PR [#1](undefined) in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
-6. ⬆️ Pushed commits to `docs/phase-2-docs-site` in [motly-labs/motly-monorepo](https://github.com/motly-labs/motly-monorepo)
 <!--END_SECTION:activity-->
 
 ---
