@@ -211,8 +211,7 @@ I'm happy to pair, review, or co-maintain. Especially interested in:
 ## ⚡ Recently
 
 <!--START_SECTION:activity-->
-1. ⬆️ Pushed commits to `main` in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
-2. 💪 Opened PR [#3](undefined) in [realdreamer/agent-skills](https://github.com/realdreamer/agent-skills)
+_Quiet on public repos right now — most of my day-to-day work lives in private repositories._
 <!--END_SECTION:activity-->
 
 ---
